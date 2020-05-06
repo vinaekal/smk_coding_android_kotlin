@@ -5,19 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/ll_main_layout"
-        android:layout_width="381dp"
-        android:layout_height="510dp"
-        android:background="@drawable/bgicon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="30dp"
+        android:background="#444"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="110dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="110dp">
 
         <ImageView
             android:id="@+id/imageView"
@@ -30,6 +27,33 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/user_icon" />
+
+        <EditText
+            android:id="@+id/inputNama"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nama"
+            android:textColor="@drawable/gradient"
+            android:textColorHint="#FC007A" />
+
+        <EditText
+            android:id="@+id/inputJk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Jenis Kelamin"
+            android:textColor="@drawable/gradient"
+            android:textColorHint="#FC007A" />
+
+        <EditText
+            android:id="@+id/inputNoTelp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="No Telp"
+            android:textColor="@drawable/gradient"
+            android:textColorHint="#FC007A" />
 
         <EditText
             android:id="@+id/inputEmail"
@@ -51,31 +75,14 @@
             android:textColor="@drawable/gradient"
             android:textColorHint="#FC007A" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="50dp"
-        android:orientation="horizontal">
-
         <Button
-            android:id="@+id/btnSignIn"
-            android:text="Sign In"
-            android:textAllCaps="false"
-            android:background="@drawable/button"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="-50dp"/>
-
-        <Button
-            android:id="@+id/btnSignUp"
-            android:text="Sign Up"
-            android:textAllCaps="false"
+            android:layout_margin="50dp"
             android:background="@drawable/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="-50dp"/>
-    </LinearLayout>
+            android:text="SEND"
+            android:textSize="20dp" />
 
     </LinearLayout>
 
